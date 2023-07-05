@@ -1,0 +1,18 @@
+[
+    {
+        "titulo": "Stars Wars",
+        "produto": "Produto xyz",
+        "preco": 60.00,
+        "imagem": "",
+        "alt": "Capa do livro de Front-end com Vue.js",
+        "descricao": ""
+    },
+    {
+        "titulo": "Stars Wars",
+        "produto": "Produto xyz",
+        "preco": 60.00,
+        "imagem": "",
+        "alt": "Capa do livro de Front-end com Vue.js",
+        "descricao": ""
+    }
+]

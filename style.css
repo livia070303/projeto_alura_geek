@@ -1,0 +1,218 @@
+:root{
+    --cor-azul:#2A7AE4;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+}
+header{
+    width: 50%;
+    display: flex;
+}
+/* banner promocional */
+.banner {
+    width: 100%;
+    height: 50vh;
+    background-image: url('img/Hero.png');
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: end;
+}
+.legendaPromocional{
+    width: 80%;
+    height: 30vh;
+    padding-left: 10rem
+}
+.menu{
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.alura {
+    color: var(--cor-azul);
+    margin-left: 5%;
+}
+.titulo {
+    margin: 0;
+    width: 30%;
+    font-family: 'Raleway';
+    font-size: 1.5em;
+    display: inline-block;
+}
+.tituloImagem {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.subtitulo{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+.botaoLogin {
+    width: 10%;
+    height: 6vh;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border-color: var(--cor-azul);
+    color: var(--cor-azul);
+    padding: 0;
+}
+.botaoConsole{
+    width: 15%;
+    height: 7vh;
+    border: none;
+    background-color: var(--cor-azul);
+    color: #ffffff;
+    padding: 0;
+}
+
+.input{
+    background-color: #F5F5F5;
+    width: 55%;
+    height: 5vh;
+    border: none;
+    border-radius: 20px;
+    padding-left: 4%;
+}
+
+/* section star wars */
+.starWars, .console, .diversos{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 8.5rem;
+}
+.imagemProduto, .imagemProdutoConsole, .imagemProdutoDiversos{
+    width: 100%;
+    height: 27.4vh;
+}
+.produtosStarWars, .produtosConsole, .produtosDiversos{
+    display: flex;
+    justify-content: center;
+}
+
+.produtoXYZ, .produtoConsoleXYZ, .produtoDiversosXYZ{
+    padding: 1rem;
+    width: 11.5%;
+}
+
+/* section consoles */
+/* .console{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 8.5rem;
+} */
+/* .imagemProdutoConsole{
+    width: 100%;
+    height: 23.4vh;
+} */
+/* .produtosConsole{
+    display: flex;
+    justify-content: center;
+} */
+
+/* .produtoConsoleXYZ{
+    padding: 1rem;
+    width: 11.5%;
+} */
+
+/* section diversos */
+.diversos{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 8.5rem;
+}
+/* .imagemProdutoDiversos{
+    width: 100%;
+    height: 23.4vh;
+} */
+/* .produtosDiversos{
+    display: flex;
+    justify-content: center;
+} */
+
+/* .produtoDiversosXYZ{
+    padding: 1rem
+} */
+
+/* section contato */
+.contato{
+    width: 100%;
+    height: 35vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+}
+.contatoLog{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    padding-left: 10%;
+}
+.aluraContato{
+    padding-top: 11%;
+    margin: 0;
+    width: 20%;
+    font-size: 2rem;
+}
+.vectorContato{
+    height: 5vh;
+    padding-top: 11%;
+}
+.topicos{
+    width: 20%;
+    font-size: 90%;
+}
+.inputNome{
+    width: 80%;
+    height: 5vh;
+    margin-bottom: 0.5rem;
+}
+.inputEnviarMensagem{
+    width: 80%;
+    height: 8vh;
+    margin-bottom: 0.5rem;
+}
+.contatoInputs{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.botaoEnviarMensagem{
+    width: 25%;
+    height: 5vh;
+    background-color: var(--cor-azul);
+    color: #ffffff;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+/* section rodape */
+.rodapeCompleto{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 500;
+    color: #464646 ;
+    margin: 0;
+}
+.nomeAutor{
+    margin: 0;
+    padding-top: 1rem;
+}
+.ano{
+    margin: 0;
+}
