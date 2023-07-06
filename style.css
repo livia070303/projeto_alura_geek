@@ -55,6 +55,9 @@ header{
     font-size: 1.5rem;
     font-family: 'Raleway';
     font-weight: 700;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .botaoLogin {
@@ -68,23 +71,55 @@ header{
     padding: 0;
 }
 .botaoConsole{
-    width: 15%;
+    width: 13%;
     height: 7vh;
     border: none;
     background-color: var(--cor-azul);
     color: #ffffff;
     padding: 0;
+    font-size: 1.1rem;
 }
 
 .input{
     background-color: #F5F5F5;
+    background-image: url(img/lupa-de-pesquisa.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
     width: 55%;
     height: 5vh;
     border: none;
     border-radius: 20px;
     padding-left: 4%;
 }
+.preco{
+    font-weight: bold;
+}
+.botaoVerTudo{
+    font-size: 1.2rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-left: 70%;
+    color: var(--cor-azul);
+    background-color: #ffffff;
+    border: none;
+}
+.botaoVerTudoDiversos{
+    font-size: 1.2rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin-left: 71%;
+    color: var(--cor-azul);
+    background-color: #ffffff;
+    border: none;
+}
 
+.verProduto{
+    text-decoration: none;
+    color: var(--cor-azul);
+    font-family: 'Raleway';
+    font-weight: 700;
+}
 /* section star wars */
 .starWars, .console, .diversos{
     font-family: 'Raleway';
@@ -92,16 +127,16 @@ header{
     font-size: 2rem;
     padding-left: 8.5rem;
 }
-.imagemProduto, .imagemProdutoConsole, .imagemProdutoDiversos{
+.imagemProduto{
     width: 100%;
     height: 27.4vh;
 }
-.produtosStarWars, .produtosConsole, .produtosDiversos{
+.produtos{
     display: flex;
     justify-content: center;
 }
 
-.produtoXYZ, .produtoConsoleXYZ, .produtoDiversosXYZ{
+.produtoXYZ{
     padding: 1rem;
     width: 11.5%;
     height: 20rem;
@@ -109,26 +144,6 @@ header{
     flex-direction: column;
     justify-content: space-between;
 }
-/* section consoles */
-/* .console{
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 2rem;
-    padding-left: 8.5rem;
-} */
-/* .imagemProdutoConsole{
-    width: 100%;
-    height: 23.4vh;
-} */
-/* .produtosConsole{
-    display: flex;
-    justify-content: center;
-} */
-
-/* .produtoConsoleXYZ{
-    padding: 1rem;
-    width: 11.5%;
-} */
 
 /* section diversos */
 .diversos{
@@ -137,18 +152,6 @@ header{
     font-size: 2rem;
     padding-left: 8.5rem;
 }
-/* .imagemProdutoDiversos{
-    width: 100%;
-    height: 23.4vh;
-} */
-/* .produtosDiversos{
-    display: flex;
-    justify-content: center;
-} */
-
-/* .produtoDiversosXYZ{
-    padding: 1rem
-} */
 
 /* section contato */
 .contato{
