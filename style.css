@@ -10,6 +10,10 @@ header{
     width: 50%;
     display: flex;
 }
+p{
+    margin: 0;
+    padding: 0;
+}
 /* banner promocional */
 .banner {
     width: 100%;
@@ -125,33 +129,38 @@ header{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 2rem;
-    padding-left: 8.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 .imagemProduto{
     width: 100%;
-    height: 27.4vh;
+    height: 16.4vh;
+}
+.secaoProdutos, .secaoProdutosConsole, .secaoProdutosDiversos{
+    width: 81%;
+    margin: 0 auto;
 }
 .produtos{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .produtoXYZ{
-    padding: 1rem;
-    width: 11.5%;
-    height: 20rem;
+    padding:  1rem 0;
+    width: 13%;
+    height: 16vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 /* section diversos */
-.diversos{
+/* .diversos{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 2rem;
     padding-left: 8.5rem;
-}
+} */
 
 /* section contato */
 .contato{
@@ -180,6 +189,7 @@ header{
 .topicos{
     width: 20%;
     font-size: 90%;
+    line-height: 2rem;
 }
 .inputNome{
     width: 80%;
@@ -265,4 +275,47 @@ header{
     background-color: var(--cor-azul);
     border: none;
     color: #ffffff;
+}
+
+/* section paginaProdutos */
+.descricaoProduto{
+    font-family: 'Raleway';
+    font-weight: 500;
+    color: #464646;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.todosProdutos{
+    width: 81%;
+    display: flex;
+    justify-content: space-between;
+}
+.todasSecoesProdutos{
+    width: 81%;
+}
+.produtosTitulo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    margin: 0;
+    font-size: 2rem;
+    color: #464646;
+}
+.botaoAdicionarProduto{
+    background-color: var(--cor-azul);
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    width: 15%;
+    height: 3rem;
+}
+.paginaProdutos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
 }
