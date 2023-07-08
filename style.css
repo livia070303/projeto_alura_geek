@@ -352,3 +352,67 @@ p{
     height: 7%;
     padding-right: 0.3rem;
 }
+
+/* section adicionarProduto */
+.menuProdutosAdicionar{
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.vectorAdicionar{
+    width: 6%;
+    height: 5vh;
+    padding-left: 7.5rem;
+}
+.botaoAdministrador{
+    width: 12%;
+    height: 6.5vh;
+    background-color: #ffffff;
+    color: var(--cor-azul);
+    border-color: var(--cor-azul);
+    margin-right: 7rem;
+}
+.adicionar{
+    background-color: rgb(245 241 241);
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 85vh;
+}
+.adicionarProduto{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+}
+.adicionarTitulo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #464646;
+    width: 98%;
+    display: flex;
+}
+.adicionarInput{
+    width: 96%;
+    height: 7vh;
+    border: none;
+    padding-left: 1rem;
+}
+.adicionarInputDescricao{
+    width: 96%;
+    height: 10vh;
+    border: none;
+    padding-left: 1rem;
+}
+.botaoPaginaAdicionarProduto{
+    width: 100%;
+    height: 7vh;
+    background-color: var(--cor-azul);
+    color: #ffffff;
+    border: none;
+}
