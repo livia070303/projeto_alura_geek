@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="input.css">
 </head>
 
-<body>
+<body onload="getAPI()">
     <div class="all">
         <section class="menuProdutos">
             <header>
@@ -23,7 +23,7 @@
 
         <section class="paginaProdutos">
             <div class="todosProdutos">
-                <h1 class="produtosTitulo">Todos os produtos</h1>
+                <h1 class="produtosTitulo" id="produtosTitulo">Todos os produtos</h1>
                 <button class="botaoAdicionarProduto" onclick='location.href="adicionarProdutos.html"'>Adicionar produto</button>
             </div>
 
