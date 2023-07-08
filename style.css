@@ -86,6 +86,7 @@ p{
 }
 
 .input{
+    outline: none;
     background-color: #F5F5F5;
     background-image: url(img/lupa-de-pesquisa.png);
     background-repeat: no-repeat;
@@ -187,13 +188,15 @@ p{
     line-height: 1.9rem;
 }
 .inputNome{
+    outline: none;
     width: 80%;
     height: 5vh;
     margin-bottom: 0.5rem;
     padding-left: 1rem;
     border: none;
 }
-.inputEnviarMensagem{
+.inputEscrevaSuaMensagem{
+    outline: none;
     width: 80%;
     height: 8vh;
     margin-bottom: 0.5rem;
@@ -248,11 +251,12 @@ p{
     flex-direction: column;
 }
 .loginInput{
+    outline: none;
     height: 14%;
     margin-bottom: 1rem;
     border: none;
     padding-left: 1rem;
-    color: #A2A2A2;
+    color: #464646;
     font-family: 'Raleway';
     font-weight: 400;
 }

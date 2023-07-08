@@ -35,7 +35,7 @@
 .bloco-input
 label:focus-within > span,
 input:not(:placeholder-shown) + span{
-    color:purple;
+    color: #aaa8a8;
     transform:translateY(0px);
 }
 
