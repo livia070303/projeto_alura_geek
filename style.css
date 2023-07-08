@@ -144,6 +144,7 @@ p{
 }
 .produtos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -155,14 +156,6 @@ p{
     flex-direction: column;
     justify-content: space-between;
 }
-
-/* section diversos */
-/* .diversos{
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 2rem;
-    padding-left: 8.5rem;
-} */
 
 /* section contato */
 .contato{
