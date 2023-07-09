@@ -4,6 +4,7 @@
         width: 100%;
     }
     .menu{
+        width: 76%;
         height: 3.5rem;
         background-image: url('img/lupa-de-pesquisa.png');
         background-repeat: no-repeat;
@@ -13,7 +14,7 @@
     .vector{
         width: 7%;
         height: 3.5vh;
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
     .titulo{
         width: 20%;
@@ -42,6 +43,129 @@
         margin-bottom: 0.5rem;
     }
     .login{
+        width: 77%;
+        height: 48vh;
+    }
+    .loginInput{
+        width: 93%;
+        height: 2.5rem;
+    }
+    .botaoEntrar{
+        width: 35%;
+        margin-left: 5rem;
+    }
+
+
+/* section contato */
+    .contato{
+        width: 77%;
+        height: 88vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .contatoLog{
+        width: 77%;
+        height: 10vh;
+        padding-left: 8rem;
+    }
+    .vectorContato{
+        width: 10%;
+        height: 4vh;
+        padding-top: 8%;
+    }
+    .aluraContato{
+        padding-top: 8%;
+        font-size: 1.2rem;
+    }
+    .topicos{
+        width: 77%;
+        color: #464646;
+        font-size: 15px;
+        line-height: 1.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contatoInputs{
+        width: 90%;
+        height: 45vh;
+    }
+    .subtituloContato{
+        width: 30%;
+        color: #343232;
+        font-size: 15px;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .inputNome{
+        width: 90%;
+        height: 2.5rem;
+        font-size: 10px;
+    }
+    .inputEscrevaSuaMensagem{
+        width: 90%;
+        height: 3.5rem;
+        font-size: 10px;
+    }
+    .botaoEnviarMensagem{
+        width: 40%;
+        height: 7vh;
+        font-size: 10px;
+    }
+    .rodapeCompleto{
+        width: 77%;
+        height: 10vh;
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* Tablet */
+@media (min-width: 401px) and (max-width: 768px){
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        width: 100%;
+        height: 10vh;
+    }
+    .vector{
+        width: 4%;
+        height: 4vh;
+        padding-left: 1.5rem;
+    }
+    .titulo{
+        width: 10%;
+        font-size: 16px;
+    }
+    .input{
+        width: 30%;
+        height: 2rem;
+        margin-left: 2rem;
+        background-size: 15px;
+        font-size: 12px;
+    }
+
+/* section iniciarLogin */
+    .loginIniciarSessao{
+        width: 50%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .loginTitulo{
+        font-size: 16px;
+        margin: 0;
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .login{
+        width: 79%;
         height: 48vh;
     }
     .loginInput{
@@ -55,12 +179,12 @@
 
 
 /* section contato */
-    .contato{
+    .contato{width: 79%;
         height: 88vh;
         display: flex;
         flex-direction: column;
     }
-    .contatoLog{
+    /*.contatoLog{
         width: 100%;
         height: 15vh;
         padding-left: 13rem;
@@ -89,6 +213,8 @@
         margin-left: 1.2rem;
     }
     .subtituloContato{
+        width: 30%;
+        color: #343232;
         font-size: 20px;
         margin: 0;
         margin-top: 1rem;
@@ -109,13 +235,5 @@
     .rodapeCompleto{
         width: 100%;
         height: 12vh;
-    }
-}
-
-
-
-
-/* Tablet */
-@media (min-width: 401px) and (max-width: 768px){
-    
+    } */
 }
