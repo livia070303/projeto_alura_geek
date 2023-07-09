@@ -1,3 +1,121 @@
-@media(max-width: 320px){
+/* mobile */
+@media (max-width: 400px) {
+    header{
+        width: 100%;
+    }
+    .menu{
+        height: 3.5rem;
+        background-image: url('img/lupa-de-pesquisa.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+    }
+    .vector{
+        width: 7%;
+        height: 3.5vh;
+        padding-left: 2rem;
+    }
+    .titulo{
+        width: 20%;
+        font-size: 16px;
+    }
+    .input{
+        display: none;
+        /* width: 50%;
+        height: 1rem;
+        margin-left: 2rem;
+        background-size: 11px;
+        font-size: 10px; */
+    }
+
+/* section iniciarLogin */
+    .loginIniciarSessao{
+        width: 75%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .loginTitulo{
+        font-size: 16px;
+        margin: 0;
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .login{
+        height: 48vh;
+    }
+    .loginInput{
+        width: 93%;
+        height: 2.5rem;
+    }
+    .botaoEntrar{
+        width: 35%;
+        margin-left: 6rem;
+    }
+
+
+/* section contato */
+    .contato{
+        height: 88vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .contatoLog{
+        width: 100%;
+        height: 15vh;
+        padding-left: 13rem;
+    }
+    .vectorContato{
+        width: 11%;
+        height: 6vh;
+        padding-top: 8%;
+    }
+    .aluraContato{
+        padding-top: 8%;
+        font-size: 2rem;
+    }
+    .topicos{
+        width: 100%;
+        color: #464646;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contatoInputs{
+        width: 100%;
+        height: 45vh;
+        margin-left: 1.2rem;
+    }
+    .subtituloContato{
+        font-size: 20px;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .inputNome{
+        width: 90%;
+        height: 2.5rem;
+    }
+    .inputEscrevaSuaMensagem{
+        width: 90%;
+        height: 3.5rem;
+    }
+    .botaoEnviarMensagem{
+        width: 40%;
+        height: 7vh;
+    }
+    .rodapeCompleto{
+        width: 100%;
+        height: 12vh;
+    }
+}
+
+
+
+
+/* Tablet */
+@media (min-width: 401px) and (max-width: 768px){
     
 }
