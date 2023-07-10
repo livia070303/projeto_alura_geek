@@ -1,138 +1,208 @@
 /* mobile */
-@media (max-width: 400px) {
-    header{
+@media (max-width: 415px) {
+    :root{
+        --cor-azul:#2A7AE4;
+    }
+    
+    body,html, .all{
         width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .all{
+        overflow-y: scroll;
+    }
+    
+    /* MENU */
+    header{
+        width: 30%;
+        height: 40%;
+        display: flex;
     }
     .menu{
-        width: 76%;
-        height: 3.5rem;
-        background-image: url('img/lupa-de-pesquisa.png');
+        display: flex;
+        height: 7%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .vector{
+        padding-left: 0;
+    }
+    .alura {
+        color: var(--cor-azul);
+        margin-left: 5%;
+    }
+    .titulo {
+        margin: 0;
+        font-family: 'Raleway';
+        font-size: 1rem;
+        display: inline-block;
+    }
+    .input{
+        outline: none;
+        background-color: #F5F5F5;
+        background-image: url(img/lupa-de-pesquisa.png);
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: center;
+        width: 55%;
+        height: 40%;
+        border: none;
+        border-radius: 20px;
+        padding-left: 4%;
     }
-    .vector{
-        width: 7%;
-        height: 3.5vh;
-        padding-left: 1rem;
-    }
-    .titulo{
-        width: 20%;
-        font-size: 16px;
-    }
-    .input{
-        display: none;
-    }
-
-/* section iniciarLogin */
-    .loginIniciarSessao{
-        width: 75%;
-        height: 45vh;
-        display: flex;
-        flex-direction: column;
-    }
-    .loginTitulo{
-        font-size: 16px;
-        margin: 0;
-        margin-top: 3rem;
-        margin-bottom: 0.5rem;
+    
+    
+    /* Login */
+    .botaoEntrar{
+        height: 15%;
+        background-color: var(--cor-azul);
+        border: none;
+        color: #ffffff;
     }
     .login{
-        width: 77%;
-        height: 48vh;
-    }
-    .loginInput{
-        width: 93%;
-        height: 2.5rem;
-    }
-    .botaoEntrar{
-        width: 35%;
-        margin-left: 5rem;
-    }
-
-
-/* section contato */
-    .contato{
-        width: 77%;
-        height: 88vh;
-        display: flex;
-        flex-direction: column;
-    }
-    .contatoLog{
+        background-color: #E5E5E5E5;
         width: 100%;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-    }
-    .contatoLogETopicos{
-        width: 100%;
-    }
-    .vectorContato{
-        width: 10%;
-        height: 4vh;
-        padding-top: 8%;
-    }
-    .aluraContato{
-        width: 30%;
-        padding-top: 8%;
-        font-size: 1.2rem;
-    }
-    .topicos{
-        width: 100%;
-        color: #464646;
-        font-size: 15px;
-        line-height: 1.9rem;
+        height: 35%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .loginIniciarSessao{
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .loginInput{
+        outline: none;
+        height: 14%;
+        margin-bottom: 1rem;
+        border: none;
+        padding-left: 1rem;
+        color: #464646;
+        font-family: 'Raleway';
+        font-weight: 400;
+    }
+    .loginTitulo{
+        text-align: center;
+        font-size: 1em;
+        margin: 0;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        font-family: 'Raleway';
+        font-weight: 700;
+    }
+    
+    /* CONTATO */
+    
+    .contato{
+        width: 100%;
+        height: 60%;
+        background-color: rgb(183, 179, 179);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     .contatoInputs{
-        width: 90%;
-        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+        justify-content: space-around;
+    }
+    
+    .contatoLogETopicos{
+        width: 100%;
+        height: 53%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .contatoLog {
+        display: flex;
+        align-items: center;
+        height: 10%;
+        width: 50%;
+    }
+    .vectorContato{
+        width: 18%;
+        height: 100%;
+    }
+    
+    .topicos {
+        width: 50%;
+        height: 70%;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    .aluraContato {
+        font-size: 1.5rem;
     }
     .subtituloContato{
-        width: 30%;
-        color: #343232;
-        font-size: 14px;
-        margin: 0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-left: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 2rem;
     }
     .inputNome{
-        width: 90%;
-        height: 2.5rem;
-        font-size: 10px;
+        outline: none;
+        width: 80%;
+        height: 15%;
+        border: none;
+        margin-left: 20px;
     }
+    
     .inputEscrevaSuaMensagem{
-        width: 90%;
-        height: 3.5rem;
-        font-size: 10px;
+        outline: none;
+        width: 80%;
+        height: 30%;
+        border: none;
+        margin-left: 20px;
     }
     .botaoEnviarMensagem{
-        width: 40%;
-        height: 7vh;
-        font-size: 10px;
-    }
+        width: 35%;
+        height: 20%;
+        background-color: var(--cor-azul);
+        color: #ffffff;
+        border: none;
+        margin-left: 20px;
+    } 
+    /* section rodape */
     .rodapeCompleto{
-        width: 77%;
-        height: 10vh;
-        font-size: 10px;
+        width: 100%;
+        height: 5%;
+        text-align: center;
+        font-family: 'Raleway';
+        font-weight: 500;
+        color: #464646 ;
+        margin: 0;
+    }
+    .nomeAutor{
+        margin: 0;
+        padding-top: 1rem;
+    }
+    .ano{
+        margin: 0;
     }
 }
 
 
 
 
+
+
 /* Tablet */
-@media (min-width: 401px) and (max-width: 768px){
+@media (min-width: 415px) and (max-width: 768px){
     header{
         width: 100%;
         display: flex;
         align-items: center;
     }
     .menu{
-        width: 77%;
+        width: 100%;
         height: 10vh;
     }
     .vector{
@@ -166,7 +236,7 @@
         margin-bottom: 0.5rem;
     }
     .login{
-        width: 77%;
+        width: 100%;
         height: 48vh;
     }
     .loginInput{
@@ -181,7 +251,7 @@
 
 /* section contato */
     .contato{
-        width: 77%;
+        width: 100%;
         height: 55vh;
         display: flex;
         flex-direction: row;
@@ -194,7 +264,7 @@
         font-size: 1.2rem;
     }
     .rodapeCompleto{
-        width: 77%;
+        width: 100%;
         height: 12vh;
     } 
     .topicos{
@@ -227,12 +297,4 @@
         width: 40%;
         height: 7vh;
     }
-    /*.contatoLog{
-        width: 100%;
-        height: 15vh;
-        padding-left: 13rem;
-    }
-
-    
-    */
 }
