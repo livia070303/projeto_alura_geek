@@ -2,7 +2,7 @@
     --cor-azul:#2A7AE4;
 }
 
-body,html{
+body,html, .all{
     width: 100%;
     height: 100%;
     margin: 0;

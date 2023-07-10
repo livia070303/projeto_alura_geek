@@ -195,77 +195,89 @@
 
 
 /* Tablet */
-@media (min-width: 480px) and (max-width: 768px){
+@media (min-width: 480px) {
     header{
-        width: 100%;
+        width: 35%;
+        height: 40%;
         display: flex;
         align-items: center;
     }
     .menu{
-        width: 100%;
-        height: 10vh;
+        display: flex;
+        height: 7%;
+        align-items: center;
+        justify-content: start;
+        padding-left: 7%;
     }
     .vector{
-        width: 4%;
-        height: 4vh;
-        padding-left: 1.5rem;
+        padding-left: 0;
+        width: 18%;
+    height: 100%;
     }
     .titulo{
         width: 10%;
-        font-size: 16px;
+        font-size: 20px;
     }
     .input{
-        width: 30%;
-        height: 2rem;
-        margin-left: 2rem;
-        background-size: 15px;
-        font-size: 12px;
+        width: 40%;
+        height: 50%;
     }
 
 /* section iniciarLogin */
     .loginIniciarSessao{
         width: 50%;
-        height: 45vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
     .loginTitulo{
-        font-size: 16px;
+        font-size: 25px;
         margin: 0;
         margin-top: 3rem;
         margin-bottom: 0.5rem;
     }
     .login{
         width: 100%;
-        height: 48vh;
+        height: 40%;
     }
     .loginInput{
         width: 93%;
-        height: 2.5rem;
+        height: 18%;
     }
     .botaoEntrar{
         width: 35%;
-        margin-left: 6rem;
+        margin-left: 29%;
     }
 
 
 /* section contato */
     .contato{
         width: 100%;
-        height: 55vh;
+        height: 45%;
         display: flex;
         flex-direction: row;
     }
     .contatoLogETopicos{
         width: 40%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .contatoLog{
+        display: flex;
+        align-items: center;
+        height: 15%;
+        padding-left: 0;
+        margin-right: 20px;
     }
     .aluraContato{
-        padding-top: 8%;
-        font-size: 1.2rem;
+        padding-top: 0;
+        font-size: 30px;
     }
     .rodapeCompleto{
         width: 100%;
-        height: 12vh;
+        height: 8%;
     } 
     .topicos{
         width: 77%;
@@ -274,27 +286,30 @@
         padding-left: 10%;
         display: flex;
         flex-direction: column;
-        line-height: 2.3rem;
+        line-height: 2.6rem;
     }
     .vectorContato{
-        height: 4vh;
+        height: 65%;
+        width: 26%;
+        padding-top: 0;
     }
     .contatoInputs{
-        height: 45vh;
+        height: 75%;
     }
     .subtituloContato{
        margin-top: 0;
+       font-size: 25px;
     }
     .inputNome{
         width: 90%;
-        height: 2.5rem;
+        height: 16%;
     }
     .inputEscrevaSuaMensagem{
         width: 90%;
-        height: 3.5rem;
+        height: 25%;
     }
     .botaoEnviarMensagem{
         width: 40%;
-        height: 7vh;
+        height: 17%;
     }
 }
