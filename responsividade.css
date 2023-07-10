@@ -247,6 +247,7 @@
     .botaoEntrar{
         width: 35%;
         margin-left: 29%;
+        font-size: 17px;
     }
 
 
@@ -309,7 +310,8 @@
         height: 25%;
     }
     .botaoEnviarMensagem{
-        width: 40%;
+        width: 52%;
         height: 17%;
+        font-size: 17px;
     }
 }
