@@ -1,32 +1,33 @@
 
-.bloco-input{
+.bloco-input, .bloco-textearea{
     width: 100%;
-    height: 3.4rem;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 1%;
 }
 
-.bloco-input label{
+.bloco-input label, .bloco-textearea label{
     margin-bottom:5px;
     position:relative;
+    display: block;
 }
-.bloco-input input{
+.bloco-input input, .bloco-textearea textarea{
     width: 86%;
     padding: 8px 16px;
-    margin-top: 1rem;
+    margin-top: 5%;
     border: none;
     outline: none;
     background-color: #fff;
+    resize: none;
 }
-.bloco-input input::placeholder{
+.bloco-input input::placeholder, .bloco-textearea textarea::placeholder{
     opacity:0;
 }
-.bloco-input span{
+.bloco-input span, .bloco-textearea span{
     position:absolute;
     top:0;
-    left:16px;
+    left:4%;
     transform:translateY(30px);
     font-size:0.825em;
     transition-duration:300ms;
@@ -39,20 +40,9 @@ input:not(:placeholder-shown) + span{
     transform:translateY(0px);
 }
 
-.bloco-textearea{
-    height: 7.4rem;
-}
-
-.bloco-input textarea{
-    width: 91%;
-    padding: 8px 16px;
-    margin-top: 1rem;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    resize: none;
-}
-
-.bloco-input textarea::placeholder{
-    opacity:0;
+.bloco-textearea
+label:focus-within > span,
+textarea:not(:placeholder-shown) + span{
+    color: #aaa8a8;
+    transform:translateY(0px);
 }
