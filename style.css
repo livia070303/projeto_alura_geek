@@ -11,6 +11,7 @@ body,html, .all{
 header{
     width: 20%;
     display: flex;
+    padding-left: 3%;
 }
 p{
     margin: 0;
@@ -37,7 +38,6 @@ p{
     height: 11%;
     align-items: center;
     justify-content: start;
-    /* margin-left: 2%; */
 }
 .alura {
     color: var(--cor-azul);
