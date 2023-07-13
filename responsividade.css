@@ -58,7 +58,7 @@
     .titulo {
         margin: 0;
         font-family: 'Raleway';
-        font-size: 22px;
+        font-size: 18px;
         display: inline-block;
     }
     .cabecalhoProdutosAdicionar .input{
@@ -80,7 +80,21 @@
         border-radius: 20px;
         padding-left: 4%;
     }
-
+    .paginaProdutos{
+        width: 100%;
+        height: auto;
+    }
+    .produtosTitulo{
+        font-size: 20px;
+    }
+    .todosProdutos{
+        flex-direction: column;
+    }
+    .todasSecoesProdutos .produtoXYZ{
+        width: 48%;
+        height: 50%;
+    }
+    
     /* Login */
     .botaoEntrar{
         height: 15%;
@@ -221,6 +235,10 @@
         height: 60%;
         font-size: 16px;
     }
+    .botaoAdicionarProduto{
+        width: 50%;
+        margin: 8px 0;
+    }
 }
 
 
@@ -243,6 +261,13 @@
         justify-content: start;
         padding-left: 7%;
     }
+    .menuProdutos .input{
+        height: 35%;
+        font-size: 18px;
+    }
+    .menuProdutos .titulo{
+        font-size: 35px;
+    }
     .vector{
         padding-left: 0;
         width: 18%;
@@ -255,7 +280,7 @@
     }
     .titulo{
         width: 35%;
-        font-size: 20px;
+        font-size: 22px;
     }
     .input{
         width: 40%;
@@ -265,7 +290,18 @@
         width: 60%;
         height: 35%;
     }
-    
+    .paginaProdutos{
+        width: 100%;
+        height: auto;
+    }
+    .todasSecoesProdutos .produtoXYZ{
+        width: 24%;
+        height: 50%;
+        margin-right: 6px;
+    }
+    .todasSecoesProdutos .produtos{
+        justify-content: flex-start;
+    }
 
 /* section iniciarLogin */
     .loginIniciarSessao{
@@ -293,7 +329,10 @@
         margin-left: 29%;
         font-size: 17px;
     }
-
+    .botaoAdicionarProduto{
+        width: 25%;
+        height: 45px;
+    }
 
 /* section contato */
     .contato{
