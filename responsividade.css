@@ -25,6 +25,22 @@
         align-items: center;
         justify-content: space-evenly;
     }
+    .menuProdutos header{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .menuProdutos .titulo{
+        font-size: 20px;
+    }
+    .menuProdutos .input{
+        width: 65%;
+        height: 35%;
+    }
+    .menuProdutos .vector{
+        width: 23%;
+        height: 79%;
+    }
     .vector{
         padding-left: 0;
     }
@@ -42,7 +58,7 @@
     .titulo {
         margin: 0;
         font-family: 'Raleway';
-        font-size: 18px;
+        font-size: 22px;
         display: inline-block;
     }
     .cabecalhoProdutosAdicionar .input{
