@@ -109,7 +109,24 @@
         width: 48%;
         height: 50%;
     }
-    
+    .produtos .produtoXYZ{
+        width: 48%;
+    }
+    .starWars, .console, .diversos{
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .botaoVerTudoTodosProdutos{
+        width: 55%;
+    }
+    .botaoVerTudo, .botaoVerTudoDiversos{
+        width: 32%;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     /* Login */
     .botaoEntrar{
         height: 15%;
