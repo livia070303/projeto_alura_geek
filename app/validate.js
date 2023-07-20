@@ -4,6 +4,15 @@ var mensagem = document.getElementById("inputEscrevaSuaMensagem");
 //regex para validação de email
 let reg = /^[\w.\+]+@\w+.\w{2,}(?:.\w{2})?$/;
 
+function Envio(e) {
+    e.preventDefault();
+    var botao = document.getElementById("botaoEnviarMensagem");
+    botao.style.backgroundColor= 'green';
+    botao.innerText= "Mensagem enviada";
+    nome.value = "";
+    mensagem.value = "";
+}
+
 function ehValido(campo){
    
     var spanNomeInvalido = document.getElementById("nomeInputInvalido");
@@ -43,12 +52,7 @@ function ehValido(campo){
     botao.disabled = false;
     
 }
-function Envio(e) {
-    e.preventDefault();
-    var botao = document.getElementById("botaoEnviarMensagem");
-    botao.style.backgroundColor= 'green';
-    botao.innerText= "Mensagem enviada";
-}
+
 
 function  ehBrancoOuVazio(palavra){
     return (palavra=="" || palavra.replaceAll(' ','') == '')

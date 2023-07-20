@@ -233,7 +233,7 @@
                 <p>Quero ser franqueado</p>
                 <p>Anuncie aqui</p>
             </div>
-            <section class="contatoInputs">
+            <form class="contatoInputs" onsubmit="Envio(event)">
                 <h3 class="subtituloContato">Fale conosco</h3>
                 <input class="inputNome" id="nomeInput" type="text" placeholder="Nome" onblur="ehValido('nome')"/>
                 <span class="error__form" id="nomeInputInvalido"></span>
@@ -241,7 +241,7 @@
                 <span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span>
                 <button disabled class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
             </section>
-        </section>
+        </form>
         <footer class="rodapeCompleto">
             <p class="nomeAutor">Desenvolvido por Livia Rodrigues</p>
             <p class="ano">2023</p>
