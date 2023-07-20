@@ -1,9 +1,6 @@
 var nome = document.getElementById("nomeInput");
 var mensagem = document.getElementById("inputEscrevaSuaMensagem");
 
-//regex para validação de email
-let reg = /^[\w.\+]+@\w+.\w{2,}(?:.\w{2})?$/;
-
 function Envio(e) {
     e.preventDefault();
     var botao = document.getElementById("botaoEnviarMensagem");

@@ -39,6 +39,10 @@ function exibirOsLivrosNaTela(listaDeProdutos) {
         
         <div class="produtoXYZ">
         <div class="imagemProduto">
+            <div class="imagemIcones">
+                <img class="imagemLixeira" src="img/lixeira.png" alt="lixeira">
+                <img class="imagemLapis" src="img/lápis.png" alt="caneta">
+            </div>
             <img src="${produto.imagem}" alt="Cabeça Darth Star Wars miniatura">
         </div>
 

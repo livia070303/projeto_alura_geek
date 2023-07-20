@@ -22,15 +22,18 @@
 
         </section>
 
-        <section class="login">
+        <form class="login" onsubmit="Envio(event)">
             <div class="loginIniciarSessao">
                 <h1 class="loginTitulo">Iniciar Sessão</h1>
-                <input class="loginInput" type="text" placeholder="Escreva seu email">
-                <input class="loginInput" type="text" placeholder="Escreva sua senha">
-                <button class="botaoEntrar">Entrar</button>
+                <input class="loginInput" id="emailInput" type="text" placeholder="Escreva seu email"
+                    onblur="ehValido('email')">
+                <span class="error__form" id="emailInvalido"></span>
+                <input class="loginInput" id="senhaInput" type="password" placeholder="Escreva sua senha"
+                    onblur="ehValido('senha')">
+                <span class="error__form" id="senhaInvalida"></span>
+                <button disabled class="botaoEntrar" id="botaoEntrar">Entrar</button>
             </div>
-        </section>
-
+        </form>
 
         <section class="contato">
             <div class="contatoLogETopicos">
@@ -61,7 +64,7 @@
         </footer>
 
     </div>
-
+    <script src="./app/validateIniciarSessao.js"></script>
 </body>
 
 </html>
