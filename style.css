@@ -80,6 +80,9 @@ p{
     color: var(--cor-azul);
     padding: 0;
 }
+.botaoLogin:hover{
+    cursor: pointer;
+}
 .botaoConsole{
     width: 13%;
     height: 18%;
@@ -88,6 +91,9 @@ p{
     color: #ffffff;
     padding: 0;
     font-size: 1.1rem;
+}
+.botaoConsole:hover{
+    cursor: pointer;
 }
 
 .input{
@@ -115,6 +121,9 @@ p{
     background-color: #ffffff;
     border: none;
 }
+.botaoVerTudo:hover{
+    cursor: pointer;
+}
 .botaoVerTudoDiversos{
     font-size: 1.2rem;
     font-family: 'Raleway';
@@ -124,7 +133,9 @@ p{
     background-color: #ffffff;
     border: none;
 }
-
+.botaoVerTudoDiversos:hover{
+    cursor: pointer;
+}
 .verProduto{
     text-decoration: none;
     color: var(--cor-azul);
@@ -146,6 +157,9 @@ p{
     color: #ffffff;
     font-family: 'Raleway';
     margin: 2rem;
+}
+.botaoVerTudoTodosProdutos:hover{
+    cursor: pointer;
 }
 
 /* section star wars */
@@ -239,6 +253,9 @@ p{
     border: none;
     margin-bottom: 1rem;
 }
+.botaoEnviarMensagem:hover{
+    cursor: pointer;
+}
 
 /* section rodape */
 .rodapeCompleto{
@@ -298,7 +315,9 @@ p{
     border: none;
     color: #ffffff;
 }
-
+.botaoEntrar:hover{
+    cursor: pointer;
+}
 /* section paginaProdutos */
 .menuProdutos{
     background-color: rgb(183, 179, 179);
@@ -344,6 +363,9 @@ p{
     font-size: 1rem;
     width: 15%;
     height: 36px;
+}
+.botaoAdicionarProduto:hover{
+    cursor: pointer;
 }
 .paginaProdutos{
     display: flex;
@@ -401,6 +423,9 @@ p{
     color: var(--cor-azul);
     border-color: var(--cor-azul);
 }
+.botaoAdministrador:hover{
+    cursor: pointer;
+}
 .adicionar{
     background-color: rgb(245 241 241);
     align-items: center;
@@ -444,6 +469,9 @@ p{
     background-color: var(--cor-azul);
     color: #ffffff;
     border: none;
+}
+.botaoPaginaAdicionarProduto:hover{
+    cursor: pointer;
 }
 /* ajustes do rodape */
 .contatoLogETopicos{
