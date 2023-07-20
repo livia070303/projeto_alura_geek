@@ -235,9 +235,11 @@
             </div>
             <section class="contatoInputs">
                 <h3 class="subtituloContato">Fale conosco</h3>
-                <input class="inputNome" type="text" placeholder="Nome" />
-                <input class="inputEscrevaSuaMensagem" type="text" placeholder="Escreva sua mensagem" />
-                <button class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
+                <input class="inputNome" id="nomeInput" type="text" placeholder="Nome" onblur="ehValido('nome')"/>
+                <span class="error__form" id="nomeInputInvalido"></span>
+                <input class="inputEscrevaSuaMensagem" id="inputEscrevaSuaMensagem" type="text" placeholder="Escreva sua mensagem" onblur="ehValido('mensagem')"/>
+                <span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span>
+                <button disabled class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
             </section>
         </section>
         <footer class="rodapeCompleto">
@@ -245,7 +247,7 @@
             <p class="ano">2023</p>
         </footer>
     </div>
-
+<script src="./app/validate.js"></script>
 </body>
 
 </html>
