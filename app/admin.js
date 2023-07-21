@@ -40,7 +40,7 @@ function exibirOsLivrosNaTela(listaDeProdutos) {
         <div class="produtoXYZ">
         <div class="imagemProduto">
             <div class="imagemIcones">
-                <img class="imagemLixeira" src="img/lixeira.png" alt="lixeira">
+                <img onclick= 'deletarProduto(${produto.id})' class="imagemLixeira" src="img/lixeira.png" alt="lixeira">
                 <img class="imagemLapis" src="img/lápis.png" alt="caneta">
             </div>
             <img src="${produto.imagem}" alt="Cabeça Darth Star Wars miniatura">
@@ -51,4 +51,13 @@ function exibirOsLivrosNaTela(listaDeProdutos) {
         <p class="descricaoProduto">${produto.descricao}</p>
     </div>`
     })
+}
+async function deletarProduto(id) {
+    const conexao = await fetch("http://localhost:3000/produtos/" + id, {
+        method: "DELETE",
+        
+    });
+    if (!conexao.ok) {
+        throw new Error("Não foi possível apagar o produto!")
+    }
 }
