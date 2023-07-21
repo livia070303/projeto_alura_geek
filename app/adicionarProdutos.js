@@ -40,6 +40,8 @@ async function criarProduto(url, categoria, produto, preco, descricao) {
     return conexaoConvertida;
 }
 
+
+
 async function buscarProduto(termoDeBusca) {
     const conexao = await fetch(`../Dados/produtosConsoles.json?q=${termoDeBusca}`);
     const conexaoConvertida = await conexao.json();
