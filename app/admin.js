@@ -5,26 +5,26 @@ const tituloProdutos = document.getElementById('produtosTitulo')
 
 async function getAPI() {
     console.log('recarregou')
-    const res = await fetch('http://localhost:3000/produtos')
-    produtos = await res.json()
+    const res = await fetch('../Dados/produtosConsoles.json')
+    lista = await res.json()
 
     var pagina = window.location.hash;
 
     if (pagina == '#starwars') {
         tituloProdutos.innerHTML = 'Todos produtos Star Wars'
-        const produtosStarWars = produtos.filter(produto => produto.categoria == 'Star Wars')
+        const produtosStarWars = lista.produtos.filter(produto => produto.categoria == 'Star Wars')
         exibirOsLivrosNaTela(produtosStarWars)
 
     } else if (pagina == '#console') {
         tituloProdutos.innerHTML = 'Todos produtos Console'
-        const produtosConsole = produtos.filter(produto => produto.categoria == 'Consoles')
+        const produtosConsole = lista.produtos.filter(produto => produto.categoria == 'Consoles')
         exibirOsLivrosNaTela(produtosConsole)
     } else if (pagina == '#diversos') {
         tituloProdutos.innerHTML = 'Todos produtos Diversos'
-        const produtosDiversos = produtos.filter(produto => produto.categoria == 'Diversos')
+        const produtosDiversos = lista.produtos.filter(produto => produto.categoria == 'Diversos')
         exibirOsLivrosNaTela(produtosDiversos)
     } else {
-        exibirOsLivrosNaTela(produtos)
+        exibirOsLivrosNaTela(lista.produtos)
     }
 
 

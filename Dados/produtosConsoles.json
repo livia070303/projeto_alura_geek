@@ -168,8 +168,17 @@
       "preco": "R$ 60,00",
       "imagem": "https://ik.imagekit.io/gocase/govinci/stw-gtf-02/freshrosa-garrafafresh950/mockup?stamp=uploads/designcustomization/24109/preview_pt_shrine/4bd44f391f98ac8b0a15082bd04aba43.png&expires=yes",
       "alt": "produto Garrafa",
-      "descricao": "Garrafa Térmica Fresh - Darth Vader",
+      "descricao": "#1111111",
       "id": 19
+    },
+    {
+      "categoria": "Star Wars",
+      "produto": "Chinelo",
+      "preco": "60,00",
+      "imagem": "https://havaianas.com.br/dw/image/v2/BDDJ_PRD/on/demandware.static/-/Sites-havaianas-master/default/dwd1a0e3a7/product-images/4135185_3983_STAR-WARS_A.png?sw=680&sh=680",
+      "alt": "produto Chinelo",
+      "descricao": "#11111111",
+      "id": 20
     }
   ]
 }

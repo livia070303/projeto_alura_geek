@@ -21,10 +21,10 @@
                 <input class="input" type="text" placeholder="O que deseja encontrar?" />
             </header>
 
-            <button class="botaoAdministrador" id="botaoAdministrador" onclick='location.href="administrador.html"'>Menu administrador</button>
+            <button class="botaoAdministrador" id="botaoAdministrador" onclick='location.href="./administrador.html"'>Menu administrador</button>
         </section>
 
-        <section class="adicionar">
+        <form class="adicionar" onsubmit="Envio(event)">
             <div class="adicionarProduto">
                 <h1 class="adicionarTitulo">Adicionar novo produto</h1>
 
@@ -42,10 +42,11 @@
                 </div>
                 <div class="bloco-input">
                     <label for="nome">
-                        <input type="text" id="nome" placeholder="Name">
+                        <input type="text" id="nome" placeholder="Name" onblur="ehValido('nome')">
                         <span>Nome do produto</span>
                     </label>
                 </div>
+                <span class="error__form" id="nomeInvalido"></span>
                 <div class="bloco-input">
                     <label for="preco">
                         <input type="text" id="preco" placeholder="Name">
@@ -54,14 +55,14 @@
                 </div>
                 <div class="bloco-textearea ">
                     <label for="descricao">
-                        <textarea name="descricao" id="descricao" placeholder="descricao"></textarea>
+                        <textarea name="descricao" id="descricao" placeholder="descricao" onblur="ehValido('descricao')"></textarea>
                         <span>Descrição do produto</span>
                     </label>
                 </div>
-
-                <button class="botaoPaginaAdicionarProduto" onclick="salvarProduto()">Adicionar produto</button>
+                <span class="error__form" id="descricaoInvalida"></span>
+                <button disabled class="botaoPaginaAdicionarProduto" id="botaoPaginaAdicionarProduto" onclick="salvarProduto()">Adicionar produto</button>
             </div>
-        </section>
+        </form>
 
         <section class="contato">
             <div class="contatoLog">
@@ -78,12 +79,14 @@
                 <p>Anuncie aqui</p>
             </div>
 
-            <section class="contatoInputs">
+            <form class="contatoInputs" onsubmit="Envio(event)">
                 <h3 class="subtituloContato">Fale conosco</h3>
-                <input class="inputNome" id="nomeUsuario" type="text" placeholder="Nome" />
-                <input class="inputEscrevaSuaMensagem" type="text" placeholder="Escreva sua mensagem" />
+                <input class="inputNome" id="nomeInput" type="text" placeholder="Nome" onblur="ehValido('nome')"/>
+                <span class="error__form" id="nomeInputInvalido"></span>
+                <input class="inputEscrevaSuaMensagem" id="inputEscrevaSuaMensagem" type="text" placeholder="Escreva sua mensagem" onblur="ehValido('mensagem')"/>
+                <span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span><span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span><span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span>
                 <button class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
-            </section>
+            </form>
         </section>
         <footer class="rodapeCompleto">
             <p class="nomeAutor">Desenvolvido por Livia Rodrigues</p>
@@ -91,6 +94,8 @@
         </footer>
     </div>
 <script src="./app/adicionarProdutos.js"></script>
+<script src="./app/validateContato.js"></script>
+<script src="./app/validateAdicionarProdutos.js"></script>
 </body>
 
 </html>
