@@ -1,146 +1,175 @@
-[
+{
+  "produtos": [
     {
-        "categoria": "Star Wars",
-        "produto": "Produto xyz",
-        "preco": "R$ 60.00",
-        "imagem": "img/caneca.png",
-        "alt": "Caneca",
-        "descricao": "#1111111"
+      "id": 1,
+      "categoria": "Star Wars",
+      "produto": "Produto xyz",
+      "preco": "R$ 60.00",
+      "imagem": "img/caneca.png",
+      "alt": "Caneca",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Star Wars",
-       "produto": "Produto XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/cabeca-darth.png",
-        "alt": "Cabeça Darth Vader",
-        "descricao": "#1111111"
+      "id": 2,
+      "categoria": "Star Wars",
+      "produto": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/cabeca-darth.png",
+      "alt": "Cabeça Darth Vader",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Star Wars",
-       "produto": "Produto XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/mestre-yoda2.png",
-        "alt": "Miniatura Mestre Yoda",
-        "descricao": "#1111111"
+      "id": 3,
+      "categoria": "Star Wars",
+      "produto": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/mestre-yoda2.png",
+      "alt": "Miniatura Mestre Yoda",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Star Wars",
-       "produto": "Produto XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/stormtroomper.png",
-        "alt": "Miniatura  Stormtroomper",
-        "descricao": "#1111111"
+      "id": 4,
+      "categoria": "Star Wars",
+      "produto": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/stormtroomper.png",
+      "alt": "Miniatura  Stormtroomper",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Star Wars",
-       "produto": "Produto XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/mestre-yoda.png",
-        "alt": "Cabeça Mestre yoda",
-        "descricao": "#1111111"
+      "id": 5,
+      "categoria": "Star Wars",
+      "produto": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/mestre-yoda.png",
+      "alt": "Cabeça Mestre yoda",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Star Wars",
-        "produto": "Produto XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/darth-vader.png",
-        "alt":"Miniatura Darth Vader",
-        "descricao": "#1111111"
+      "id": 6,
+      "categoria": "Star Wars",
+      "produto": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/darth-vader.png",
+      "alt": "Miniatura Darth Vader",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Consoles",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/controle.png",
-        "alt": "Controle",
-        "descricao": "#1111111"
+      "id": 7,
+      "categoria": "Consoles",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/controle.png",
+      "alt": "Controle",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Consoles",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/playstation.png",
-        "alt": "PlayStation 5",
-        "descricao": "#1111111"
+      "id": 8,
+      "categoria": "Consoles",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/playstation.png",
+      "alt": "PlayStation 5",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Consoles",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/console-clássico.png",
-        "alt": "Console antigo",
-        "descricao": "#1111111"
+      "id": 9,
+      "categoria": "Consoles",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/console-clássico.png",
+      "alt": "Console antigo",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Consoles",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/nitendo.png",
-        "alt": "Controle nitendo",
-        "descricao": "#1111111"
+      "id": 10,
+      "categoria": "Consoles",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/nitendo.png",
+      "alt": "Controle nitendo",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Consoles",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/xbox.png",
-        "alt": "X-box",
-        "descricao": "#1111111"
+      "id": 11,
+      "categoria": "Consoles",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/xbox.png",
+      "alt": "X-box",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Consoles",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/nostalgic-portátil.png",
-        "alt": "Video game antigo portátil",
-        "descricao": "#1111111"
+      "id": 12,
+      "categoria": "Consoles",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/nostalgic-portátil.png",
+      "alt": "Video game antigo portátil",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Diversos",
-        "produto": "Camisa Atari",
-        "preco": "R$ 60,00",
-        "imagem": "img/camisa.png",
-        "alt": "Camisa Atari",
-        "descricao": "#1111111"
+      "id": 13,
+      "categoria": "Diversos",
+      "produto": "Camisa Atari",
+      "preco": "R$ 60,00",
+      "imagem": "img/camisa.png",
+      "alt": "Camisa Atari",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Diversos",
-        "produto": "Camisa SNES",
-        "preco": "R$ 60,00",
-        "imagem": "img/camiseta-jogos.png",
-        "alt": "Camisa SNES",
-        "descricao": "#1111111"
+      "id": 14,
+      "categoria": "Diversos",
+      "produto": "Camisa SNES",
+      "preco": "R$ 60,00",
+      "imagem": "img/camiseta-jogos.png",
+      "alt": "Camisa SNES",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Diversos",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/sonic.png",
-        "alt": "Controle e console Sonyc",
-        "descricao": "#1111111"
+      "id": 15,
+      "categoria": "Diversos",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/sonic.png",
+      "alt": "Controle e console Sonyc",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Diversos",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/aparelho-de-som.png",
-        "alt": "Console antigo",
-        "descricao": "#1111111"
+      "id": 16,
+      "categoria": "Diversos",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/aparelho-de-som.png",
+      "alt": "Console antigo",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Diversos",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/óculos-realidade-virtual.png",
-        "alt": "Óculos de realidade virtual",
-        "descricao": "#1111111"
+      "id": 17,
+      "categoria": "Diversos",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/óculos-realidade-virtual.png",
+      "alt": "Óculos de realidade virtual",
+      "descricao": "#1111111"
     },
     {
-        "categoria": "Diversos",
-        "produto": "Controle e console XYZ",
-        "preco": "R$ 60,00",
-        "imagem": "img/pelúcia-pokemom-pikachu.png",
-        "alt": "Pelucia Pikachu",
-        "descricao": "#1111111"
+      "id": 18,
+      "categoria": "Diversos",
+      "produto": "Controle e console XYZ",
+      "preco": "R$ 60,00",
+      "imagem": "img/pelúcia-pokemom-pikachu.png",
+      "alt": "Pelucia Pikachu",
+      "descricao": "#1111111"
+    },
+    {
+      "categoria": "Diversos",
+      "produto": "Garrafa",
+      "preco": "R$ 60,00",
+      "imagem": "https://ik.imagekit.io/gocase/govinci/stw-gtf-02/freshrosa-garrafafresh950/mockup?stamp=uploads/designcustomization/24109/preview_pt_shrine/4bd44f391f98ac8b0a15082bd04aba43.png&expires=yes",
+      "alt": "produto Garrafa",
+      "descricao": "Garrafa Térmica Fresh - Darth Vader",
+      "id": 19
     }
-]
+  ]
+}

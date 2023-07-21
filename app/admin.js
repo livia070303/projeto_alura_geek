@@ -5,7 +5,7 @@ const tituloProdutos = document.getElementById('produtosTitulo')
 
 async function getAPI() {
     console.log('recarregou')
-    const res = await fetch('../Dados/produtosConsoles.json')
+    const res = await fetch('http://localhost:3000/produtos')
     produtos = await res.json()
 
     var pagina = window.location.hash;
