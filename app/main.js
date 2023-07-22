@@ -5,7 +5,7 @@ const tituloProdutos = document.getElementById('produtosTitulo')
 
 async function getAPI() {
     console.log('recarregou')
-    const res = await fetch('../Dados/produtosConsoles.json')
+    const res = await fetch('https://json-server-alura-geek.glitch.me/produtos/')
     lista = await res.json()
     console.log(lista.produtos)
 

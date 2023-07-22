@@ -1,5 +1,5 @@
 async function deletarProduto(id) {
-    const conexao = await fetch("http://localhost:3000/produtos/" + id, {
+    const conexao = await fetch("https://json-server-alura-geek.glitch.me/produtos/" + id, {
         method: "DELETE",
         
     });

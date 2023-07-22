@@ -1,11 +1,11 @@
 async function listaDeProdutos() {
-    const conexao = await fetch("http://localhost:3000/produtos");
+    const conexao = await fetch("https://json-server-alura-geek.glitch.me/produtos/");
     const conexaoConvertida = await conexao.json();
 
     return conexaoConvertida;
 }
 
-function salvarProduto(){
+function salvarProduto() {
     var inputUrl = document.getElementById("url").value;
     var inputCategoria = document.getElementById("categoria").value;
     var inputNome = document.getElementById("nome").value;
@@ -18,17 +18,17 @@ function salvarProduto(){
     window.location.href = "/administrador.html";
 }
 async function criarProduto(url, categoria, produto, preco, descricao) {
-    const conexao = await fetch("http://localhost:3000/produtos", {
+    const conexao = await fetch("https://json-server-alura-geek.glitch.me/produtos/", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
         },
         body: JSON.stringify({
-            "categoria": categoria ,
+            "categoria": categoria,
             "produto": produto,
             "preco": preco,
             "imagem": url,
-            "alt": 'produto '+ produto,
+            "alt": 'produto ' + produto,
             "descricao": descricao
         })
     });

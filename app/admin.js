@@ -5,7 +5,7 @@ const tituloProdutos = document.getElementById('produtosTitulo')
 
 async function getAPI() {
     console.log('recarregou')
-    const res = await fetch('../Dados/produtosConsoles.json')
+    const res = await fetch('https://json-server-alura-geek.glitch.me/produtos/')
     lista = await res.json()
 
     var pagina = window.location.hash;
@@ -32,7 +32,7 @@ async function getAPI() {
 async function getProdutoId() {
     console.log('editar item');
     var id = window.location.hash.replace('#', '');
-    const res = await fetch('http://localhost:3000/produtos/' + id)
+    const res = await fetch('https://json-server-alura-geek.glitch.me/produtos/' + id)
     var item = await res.json()
 
     var url = document.getElementById('url');
@@ -80,7 +80,7 @@ function editarProdutoRedirect(id) {
 }
 
 async function deletarProduto(id) {
-    const conexao = await fetch("http://localhost:3000/produtos/" + id, {
+    const conexao = await fetch("https://json-server-alura-geek.glitch.me/produtos/" + id, {
         method: "DELETE",
         
     });
@@ -97,7 +97,7 @@ async function editarProduto() {
     var preco = document.getElementById('preco').value;
     var descricao = document.getElementById('descricao').value;
    
-    const conexao = await fetch("http://localhost:3000/produtos/" + id, {
+    const conexao = await fetch("https://json-server-alura-geek.glitch.me/produtos/" + id, {
         method: "PUT",
         headers: {
             "Content-type": "application/json"
