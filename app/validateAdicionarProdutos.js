@@ -18,7 +18,7 @@ function ehValido(campo){
     var botao = document.getElementById("botaoPaginaAdicionarProduto");
     botao.disabled = true;
     botao.style.backgroundColor= "#2A7AE4";
-    botao.innerText= "Adicionar produto";
+    // botao.innerText= "Adicionar produto";
     
     if(ehBrancoOuVazio(nome.value)){  
         if(campo=='nome') spanNomeInvalido.innerText="Nome não pode ser vazio ou em branco!";
@@ -46,7 +46,7 @@ function ehValido(campo){
     }
 
     botao.style.backgroundColor= "darkblue";
-    botao.innerText= "Adicionar produto";
+    // botao.innerText= "Adicionar produto";
     botao.disabled = false;
     
 }

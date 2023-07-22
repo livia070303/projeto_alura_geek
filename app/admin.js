@@ -29,6 +29,28 @@ async function getAPI() {
 
 
 }
+async function getProdutoId() {
+    console.log('editar item');
+    var id = window.location.hash.replace('#', '');
+    const res = await fetch('http://localhost:3000/produtos/' + id)
+    var item = await res.json()
+
+    var url = document.getElementById('url');
+    url.value = item.imagem;
+
+    var categoria = document.getElementById('categoria');
+    categoria.value = item.categoria;
+
+    var nome = document.getElementById('nome');
+    nome.value = item.produto;
+
+    var preco = document.getElementById('preco');
+    preco.value = item.preco;
+
+    var descricao = document.getElementById('descricao');
+    descricao.value = item.descricao;
+
+}
 
 function exibirOsLivrosNaTela(listaDeProdutos) {
 
@@ -41,7 +63,7 @@ function exibirOsLivrosNaTela(listaDeProdutos) {
         <div class="imagemProduto">
             <div class="imagemIcones">
                 <img onclick= 'deletarProduto(${produto.id})' class="imagemLixeira" src="img/lixeira.png" alt="lixeira">
-                <img class="imagemLapis" src="img/lápis.png" alt="caneta">
+                <img onclick= 'editarProdutoRedirect(${produto.id})' class="imagemLapis" src="img/lápis.png" alt="caneta">
             </div>
             <img src="${produto.imagem}" alt="Cabeça Darth Star Wars miniatura">
         </div>
@@ -52,6 +74,11 @@ function exibirOsLivrosNaTela(listaDeProdutos) {
     </div>`
     })
 }
+
+function editarProdutoRedirect(id) {
+    window.location.href = 'editarProduto.html#' + id
+}
+
 async function deletarProduto(id) {
     const conexao = await fetch("http://localhost:3000/produtos/" + id, {
         method: "DELETE",
@@ -60,4 +87,34 @@ async function deletarProduto(id) {
     if (!conexao.ok) {
         throw new Error("Não foi possível apagar o produto!")
     }
+}
+async function editarProduto() {
+
+    var id = window.location.hash.replace('#', '');
+    var url = document.getElementById('url').value;
+    var categoria = document.getElementById('categoria').value;
+    var produto = document.getElementById('nome').value;
+    var preco = document.getElementById('preco').value;
+    var descricao = document.getElementById('descricao').value;
+   
+    const conexao = await fetch("http://localhost:3000/produtos/" + id, {
+        method: "PUT",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            "categoria": categoria ,
+            "produto": produto,
+            "preco": preco,
+            "imagem": url,
+            "alt": 'produto '+ produto,
+            "descricao": descricao
+        })
+    });
+    if (!conexao.ok) {
+        throw new Error("Não foi possível salvar o produto")
+    }
+    const conexaoConvertida = conexao.json();
+
+    return conexaoConvertida;
 }

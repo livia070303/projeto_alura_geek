@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek/ Adicionar Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body onload="getProdutoId()">
+    <div class="all">
+        <section class="menuProdutosAdicionar">
+            <header class="cabecalhoProdutosAdicionar">
+                <img class="vectorAdicionar" src="img/Vector.png" alt="Logo alura geek">
+                <p class="titulo"><span class="alura">Alura</span>Geek</p>
+                <input class="input" type="text" placeholder="O que deseja encontrar?" />
+            </header>
+
+            <button class="botaoAdministrador" id="botaoAdministrador" onclick='location.href="./administrador.html"'>Menu administrador</button>
+        </section>
+
+        <form class="adicionar" onsubmit="Envio(event)">
+            <div class="adicionarProduto">
+                <h1 class="adicionarTitulo">Editar produto</h1>
+
+                <div class="bloco-input">
+                    <label for="url">
+                        <input type="text" id="url" placeholder="Name">
+                        <span>URL da Imagem</span>
+                    </label>
+                </div>
+                <div class="bloco-input">
+                    <label for="categoria">
+                        <input type="text" id="categoria" placeholder="Name">
+                        <span>Categoria</span>
+                    </label>
+                </div>
+                <div class="bloco-input">
+                    <label for="nome">
+                        <input type="text" id="nome" placeholder="Name" onblur="ehValido('nome')">
+                        <span>Nome do produto</span>
+                    </label>
+                </div>
+                <span class="error__form" id="nomeInvalido"></span>
+                <div class="bloco-input">
+                    <label for="preco">
+                        <input type="text" id="preco" placeholder="Name">
+                        <span>Preço do produto</span>
+                    </label>
+                </div>
+                <div class="bloco-textearea ">
+                    <label for="descricao">
+                        <textarea name="descricao" id="descricao" placeholder="descricao" onblur="ehValido('descricao')"></textarea>
+                        <span>Descrição do produto</span>
+                    </label>
+                </div>
+                <span class="error__form" id="descricaoInvalida"></span>
+                <button disabled class="botaoPaginaAdicionarProduto" id="botaoPaginaAdicionarProduto" onclick="editarProduto()">Editar produto</button>
+            </div>
+        </form>
+
+        <section class="contato">
+            <div class="contatoLog">
+                <img class="vectorContato" src="img/Vector.png" alt="Logo alura geek">
+                <p class="aluraContato"><span class="alura">Alura</span>Geek</p>
+            </div>
+            
+            <div class="topicos">
+                <p>Quem somos nós</p>
+                <p>Política de privacidade</p>
+                <p>Programa de fidelidade</p>
+                <p>Nossas lojas</p>
+                <p>Quero ser franqueado</p>
+                <p>Anuncie aqui</p>
+            </div>
+
+            <form class="contatoInputs" onsubmit="Envio(event)">
+                <h3 class="subtituloContato">Fale conosco</h3>
+                <input class="inputNome" id="nomeInput" type="text" placeholder="Nome" onblur="ehValido('nome')"/>
+                <span class="error__form" id="nomeInputInvalido"></span>
+                <input class="inputEscrevaSuaMensagem" id="inputEscrevaSuaMensagem" type="text" placeholder="Escreva sua mensagem" onblur="ehValido('mensagem')"/>
+                <span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span><span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span><span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span>
+                <button class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
+            </form>
+        </section>
+        <footer class="rodapeCompleto">
+            <p class="nomeAutor">Desenvolvido por Livia Rodrigues</p>
+            <p class="ano">2023</p>
+        </footer>
+    </div>
+<script src="./app/adicionarProdutos.js"></script>
+<script src="./app/admin.js"></script>
+<script src="./app/validateContato.js"></script>
+<script src="./app/validateAdicionarProdutos.js"></script>
+</body>
+
+</html>
