@@ -1,18 +1,21 @@
 // Botão adicionar produto: caso o formulário esteja preenchido corretamente o produto será adicionado, do contrário deverá mostrar uma mensagem de erro.
-var nome = document.getElementById("nome");
+var nome = document.getElementById("nomeProduto");
 var descricao = document.getElementById("descricao");
 
-function Envio(e) {
-    e.preventDefault();
-    var botao = document.getElementById("botaoPaginaAdicionarProduto");
-    botao.style.backgroundColor= 'green';
-    botao.innerText= "Produto adicionado";
-    nome.value = "";
-    descricao.value = "";
-}
+// function EnvioAdicionarProduto(e) {
+//     e.preventDefault();
+//     var botao = document.getElementById("botaoPaginaAdicionarProduto");
+//     botao.style.backgroundColor= 'green';
+//     botao.innerText= "Produto adicionado";
+//     nome.value = "";
+//     descricao.value = "";
+// }
 
-function ehValido(campo){
+function ehValidoCampoProduto(campo){
    
+    // nome = document.getElementById("nomeProduto");
+    // descricao = document.getElementById("descricao");
+
     var spanNomeInvalido = document.getElementById("nomeInvalido");
     var spanDescricaoInvalida = document.getElementById("descricaoInvalida");
     var botao = document.getElementById("botaoPaginaAdicionarProduto");
@@ -34,7 +37,7 @@ function ehValido(campo){
     }
 
     if(ehBrancoOuVazio(descricao.value)){  
-        if(campo=='descricao') spanDescricaoInvalida.innerText="Nome não pode ser vazio ou em branco!";
+        if(campo=='descricao') spanDescricaoInvalida.innerText="Descrição não pode ser vazio ou em branco!";
          return false;
     }
     else if(ehMaiorQueNumero(descricao.value,150)){

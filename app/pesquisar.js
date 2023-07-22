@@ -6,8 +6,8 @@ async function pesquisar() {
 
     if (campoPesquisado !== "" || campoPesquisado.replaceAll(' ', '') !== '') {
         secaoProdutos.innerHTML = ''
-        const res = await fetch('https://json-server-alura-geek.glitch.me/produtos/')
-        lista = await res.json()
+        var lista = await obtemLista();
+        
         const produtosFiltrados = lista.filter(produto => produto.produto.match(campoPesquisado))
         if (produtosFiltrados.length > 0) {
             
@@ -19,6 +19,32 @@ async function pesquisar() {
     }
 
 }
+
+async function obtemLista(){
+    var pagina = window.location.hash;
+
+    const res = await fetch('https://json-server-alura-geek.glitch.me/produtos/')
+    var  lista = await res.json()
+
+    if (pagina == '#starwars') {
+    
+        const produtosStarWars = lista.filter(produto => produto.categoria == 'Star Wars')
+        return produtosStarWars
+
+    } else if (pagina == '#console') {
+       
+        const produtosConsole = lista.filter(produto => produto.categoria == 'Consoles')
+        return produtosConsole
+
+    } else if (pagina == '#diversos') {
+        
+        const produtosDiversos = lista.filter(produto => produto.categoria == 'Diversos')
+        return produtosDiversos
+    } else {
+        return lista
+    }
+}
+
 
 function exibirOsProdutosNaTela(listaDeProdutos) {
 

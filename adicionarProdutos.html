@@ -24,7 +24,7 @@
             <button class="botaoAdministrador" id="botaoAdministrador" onclick='location.href="./administrador.html"'>Menu administrador</button>
         </section>
 
-        <form class="adicionar" onsubmit="Envio(event)">
+        <form class="adicionar" onsubmit="salvarProduto(event)">
             <div class="adicionarProduto">
                 <h1 class="adicionarTitulo">Adicionar novo produto</h1>
 
@@ -41,8 +41,8 @@
                     </label>
                 </div>
                 <div class="bloco-input">
-                    <label for="nome">
-                        <input type="text" id="nome" placeholder="Name" onblur="ehValido('nome')">
+                    <label for="nomeProduto">
+                        <input type="text" id="nomeProduto" placeholder="Name" onblur="ehValidoCampoProduto('nome')">
                         <span>Nome do produto</span>
                     </label>
                 </div>
@@ -55,12 +55,12 @@
                 </div>
                 <div class="bloco-textearea ">
                     <label for="descricao">
-                        <textarea name="descricao" id="descricao" placeholder="descricao" onblur="ehValido('descricao')"></textarea>
+                        <textarea name="descricao" id="descricao" placeholder="descricao" onblur="ehValidoCampoProduto('descricao')"></textarea>
                         <span>Descrição do produto</span>
                     </label>
                 </div>
                 <span class="error__form" id="descricaoInvalida"></span>
-                <button disabled class="botaoPaginaAdicionarProduto" id="botaoPaginaAdicionarProduto" onclick="salvarProduto()">Adicionar produto</button>
+                <button disabled class="botaoPaginaAdicionarProduto" id="botaoPaginaAdicionarProduto" type="submit">Adicionar produto</button>
             </div>
         </form>
 
@@ -84,8 +84,8 @@
                 <input class="inputNome" id="nomeInput" type="text" placeholder="Nome" onblur="ehValido('nome')"/>
                 <span class="error__form" id="nomeInputInvalido"></span>
                 <input class="inputEscrevaSuaMensagem" id="inputEscrevaSuaMensagem" type="text" placeholder="Escreva sua mensagem" onblur="ehValido('mensagem')"/>
-                <span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span><span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span><span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span>
-                <button class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
+                <span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span>
+                <button disabled  class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
             </form>
         </section>
         <footer class="rodapeCompleto">

@@ -8,7 +8,7 @@ async function listaDeProdutos() {
 function salvarProduto() {
     var inputUrl = document.getElementById("url").value;
     var inputCategoria = document.getElementById("categoria").value;
-    var inputNome = document.getElementById("nome").value;
+    var inputNome = document.getElementById("nomeProduto").value;
     var inputPreco = document.getElementById("preco").value;
     var inputDescricao = document.getElementById("descricao").value;
 

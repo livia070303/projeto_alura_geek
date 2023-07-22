@@ -5,7 +5,7 @@ var senha = document.getElementById("senhaInput");
 let reg = /^[\w.\+]+@\w+.\w{2,}(?:.\w{2})?$/;
 
 
-function Envio(e) {
+function EnvioLogin(e) {
     e.preventDefault();
     var botao = document.getElementById("botaoEntrar");
     botao.style.backgroundColor = 'green';
@@ -15,15 +15,11 @@ function Envio(e) {
     window.location.href = "/administrador.html";
 }
 
-function ehValido(campo) {
+function ehValidoLogin(campo) {
 
     var spanEmailInvalido = document.getElementById("emailInvalido");
     var spanSenhaInvalido = document.getElementById("senhaInvalida");
-    var botao = document.getElementById("botaoEntrar");
-
-    // botao.disabled = true;
-    botao.style.backgroundColor = "#2A7AE4";
-    botao.innerText = "Enviar mensagem";
+    var botao = document.getElementById("botaoEntrar")
 
     if (ehBrancoOuVazio(email.value)) {
 
