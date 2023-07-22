@@ -50,12 +50,14 @@
                 <p>Quero ser franqueado</p>
                 <p>Anuncie aqui</p>
             </div>
-            <section class="contatoInputs">
+            <form class="contatoInputs" onsubmit="Envio(event)">
                 <h3 class="subtituloContato">Fale conosco</h3>
-                <input class="inputNome" type="text" placeholder="Nome" />
-                <input class="inputEscrevaSuaMensagem" type="text" placeholder="Escreva sua mensagem" />
-                <button class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
-            </section>
+                <input class="inputNome" id="nomeInput" type="text" placeholder="Nome" onblur="ehValido('nome')"/>
+                <span class="error__form" id="nomeInputInvalido"></span>
+                <input class="inputEscrevaSuaMensagem" id="inputEscrevaSuaMensagem" type="text" placeholder="Escreva sua mensagem" onblur="ehValido('mensagem')"/>
+                <span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span>
+                <button disabled class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
+            </form>
         </section>
     <footer class="rodapeCompleto">
         <p class="nomeAutor">Desenvolvido por Livia Rodrigues</p>
@@ -64,6 +66,7 @@
 
     </div>
     <script src="app/main.js"></script>
+    <script src="./app/validateContato.js"></script>
     <script src="./app/pesquisar.js"></script>
 </body>
 
