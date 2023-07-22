@@ -7,25 +7,25 @@ async function getAPI() {
     console.log('recarregou')
     const res = await fetch('https://json-server-alura-geek.glitch.me/produtos/')
     lista = await res.json()
-    console.log(lista.produtos)
+    console.log(lista)
 
     var pagina = window.location.hash;
 
     if (pagina == '#starwars') {
         tituloProdutos.innerHTML = 'Todos produtos Star Wars'
-        const produtosStarWars = lista.produtos.filter(produto => produto.categoria == 'Star Wars')
+        const produtosStarWars = lista.filter(produto => produto.categoria == 'Star Wars')
         exibirOsProdutosNaTela(produtosStarWars)
 
     } else if (pagina == '#console') {
         tituloProdutos.innerHTML = 'Todos produtos Console'
-        const produtosConsole = lista.produtos.filter(produto => produto.categoria == 'Consoles')
+        const produtosConsole = lista.filter(produto => produto.categoria == 'Consoles')
         exibirOsProdutosNaTela(produtosConsole)
     } else if (pagina == '#diversos') {
         tituloProdutos.innerHTML = 'Todos produtos Diversos'
-        const produtosDiversos = lista.produtos.filter(produto => produto.categoria == 'Diversos')
+        const produtosDiversos = lista.filter(produto => produto.categoria == 'Diversos')
         exibirOsProdutosNaTela(produtosDiversos)
     } else {
-        exibirOsProdutosNaTela(lista.produtos)
+        exibirOsProdutosNaTela(lista)
     }
 
 

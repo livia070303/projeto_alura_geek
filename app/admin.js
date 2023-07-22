@@ -12,19 +12,19 @@ async function getAPI() {
 
     if (pagina == '#starwars') {
         tituloProdutos.innerHTML = 'Todos produtos Star Wars'
-        const produtosStarWars = lista.produtos.filter(produto => produto.categoria == 'Star Wars')
+        const produtosStarWars = lista.filter(produto => produto.categoria == 'Star Wars')
         exibirOsLivrosNaTela(produtosStarWars)
 
     } else if (pagina == '#console') {
         tituloProdutos.innerHTML = 'Todos produtos Console'
-        const produtosConsole = lista.produtos.filter(produto => produto.categoria == 'Consoles')
+        const produtosConsole = lista.filter(produto => produto.categoria == 'Consoles')
         exibirOsLivrosNaTela(produtosConsole)
     } else if (pagina == '#diversos') {
         tituloProdutos.innerHTML = 'Todos produtos Diversos'
-        const produtosDiversos = lista.produtos.filter(produto => produto.categoria == 'Diversos')
+        const produtosDiversos = lista.filter(produto => produto.categoria == 'Diversos')
         exibirOsLivrosNaTela(produtosDiversos)
     } else {
-        exibirOsLivrosNaTela(lista.produtos)
+        exibirOsLivrosNaTela(lista)
     }
 
 

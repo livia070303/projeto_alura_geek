@@ -11,7 +11,7 @@ function Envio(e) {
 }
 
 function ehValido(campo){
-   
+    debugger
     var spanNomeInvalido = document.getElementById("nomeInputInvalido");
     var spanMensagemInvalido = document.getElementById("inputEscrevaSuaMensagemInvalido");
     var botao = document.getElementById("botaoEnviarMensagem");
