@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição do Produto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+</head>
+<body>
+    <div class="all">
+        <section class="menu">
+            <header>
+                <img class="vector" src="img/Vector.png" alt="Logo alura geek">
+                <p class="titulo"><span class="alura">Alura</span>Geek</p>
+            </header>
+            
+            <input class="input" type="text" placeholder="O que deseja encontrar?" /> 
+        </section>    
+
+        <section class="paginaDescricao">
+            <header class="imagemDescricao">
+                <img class="caneca" src="img/caneca.png" alt="Caneca Stormtroomper 3d">
+            </header>
+            <div class="descricaoProdutos">
+                <h1 class="tituloDescricao">Caneca Stormtroomper</h1>
+                <p class="precoDescricao">R$ 60,00</p>
+                <p class="descricaoProdutoCaneca">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis,
+                    minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita,
+                    aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus,
+                    dolorum do. Animi porta anim magnam </p>
+            </div>
+        </section>
+        <section class="contato">
+            <div class="contatoLog">
+                <img class="vectorContato" src="img/Vector.png" alt="Logo alura geek">
+                <p class="aluraContato"><span class="alura">Alura</span>Geek</p>
+            </div>
+            <div class="topicos">
+                <p>Quem somos nós</p>
+                <p>Política de privacidade</p>
+                <p>Programa de fidelidade</p>
+                <p>Nossas lojas</p>
+                <p>Quero ser franqueado</p>
+                <p>Anuncie aqui</p>
+            </div>
+            <form class="contatoInputs" onsubmit="Envio(event)">
+                <h3 class="subtituloContato">Fale conosco</h3>
+                <input class="inputNome" id="nomeInput" type="text" placeholder="Nome" onblur="ehValidoDescricao('nome')"/>
+                <span class="error__form" id="nomeInputInvalido"></span>
+                <input class="inputEscrevaSuaMensagem" id="inputEscrevaSuaMensagem" type="text" placeholder="Escreva sua mensagem" onblur="ehValidoDescricao('mensagem')"/>
+                <span class="error__form" id="inputEscrevaSuaMensagemInvalido"></span>
+                <button disabled class="botaoEnviarMensagem" id="botaoEnviarMensagem">Enviar mensagem</button>
+            </form>
+        </section>
+        <footer class="rodapeCompleto">
+            <p class="nomeAutor">Desenvolvido por Livia Rodrigues</p>
+            <p class="ano">2023</p>
+        </footer>
+    </div>
+<script src="app/descricaoProdutos.js"></script>
+</body>
+</html>
